@@ -1,0 +1,16 @@
+.custom-card {
+  padding-block: 15px;
+  border-radius: 15px !important;
+  border-width: 0px !important;
+  box-shadow: 0px 10px 15px -15px #000000,
+    -50px -50px 10px -30px rgba(0, 0, 0, 0);
+}
+
+.progressBarSize {
+  width: 200px;
+  height: 9px !important;
+}
+
+.cardTitle {
+  font-weight: 600 !important;
+}
