@@ -10,8 +10,8 @@ const Statistics = () => {
       <div className="row ">
         <div className="col">
           <div className="card-block px-3 ">
-            <div className=" pb-2">
-              <span className="h6 cardTitle ">Conocimientos</span>
+            <div className=" pb-3">
+              <span className="h5 cardTitle ">Conocimientos</span>
             </div>
 
             {data.map((element) => {

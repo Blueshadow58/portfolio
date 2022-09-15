@@ -46,9 +46,8 @@ const ProfileDetail = () => {
             </Stack>
 
             <p className="card-text pt-1 ">
-              Ingeniero informático recientemente titulado, estudiando para
-              desempeñarme el desarrollo de software como desarrollador
-              Front/Back o FullStack.
+              Ingeniero informático, estudiando para desempeñarme el desarrollo
+              de software como desarrollador Front/Back o FullStack.
             </p>
             <p className="card-text pt-1">
               Actualmente me encuentro cursando "Desarrollo Backend con node.js"
