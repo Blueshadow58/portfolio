@@ -1,67 +1,141 @@
 import React from "react";
-import { Button, Stack } from "react-bootstrap";
+import {
+  Badge,
+  Button,
+  Col,
+  Container,
+  Modal,
+  Row,
+  Stack,
+} from "react-bootstrap";
 import { proyectsData } from "./ProyectsData";
 import "./Proyects.css";
 
 const Proyects = () => {
-  return proyectsData.map((proyect) => {
-    return (
-      <div key={proyect.title} className="card custom-card proyectSeparation">
-        <div className="row ">
-          <div className="col">
-            <div className=" px-3 ">
-              <Stack className=" " direction="horizontal" gap={2}>
-                <div className="">
-                  <img
-                    height={350}
-                    src={proyect.vImg}
-                    alt=""
-                    className="rounded"
-                  />
-                </div>
-                <Stack className=" ">
-                  {proyect.hImg.map((img, index) => {
-                    return (
-                      <div key={index} className="pb-2">
-                        <img
-                          src={img}
-                          height={100}
-                          alt=""
-                          className="rounded"
-                        />
-                      </div>
-                    );
-                  })}
-                </Stack>
+  const [modalShow, setModalShow] = React.useState(false);
+  const [img, setimg] = React.useState("");
 
-                <Stack>
-                  <div className="pb-3">
-                    <span className="experienceDate">Abr 2022 - Jul 2022</span>
+  const ZoomImg = (props) => {
+    return (
+      <Modal
+        {...props}
+        size="xl"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+        className="customImgModal"
+      >
+        <img src={img} alt="" className=" rounded img-fluid" />
+
+        <Modal.Footer className=" container justify-content-center">
+          <div className="col-md-4 text-center d-grid">
+            <Button variant="dark" className="" onClick={props.onHide}>
+              Cerrar
+            </Button>
+          </div>
+        </Modal.Footer>
+      </Modal>
+    );
+  };
+
+  return (
+    <>
+      {proyectsData.map((proyect) => {
+        return (
+          <Container
+            key={proyect.title}
+            className="card custom-card proyectSeparation"
+          >
+            <Row>
+              <Col xs={{ order: 2 }} lg={{ span: 6, order: 1 }}>
+                <Row>
+                  <Col className="pe-0">
+                    <img
+                      role="button"
+                      src={proyect.vImg}
+                      alt=""
+                      className="rounded img-fluid "
+                      onClick={() => {
+                        setimg(proyect.vImg);
+                        setModalShow(true);
+                      }}
+                    />
+                  </Col>
+
+                  <Col>
+                    {proyect.hImg.map((img) => {
+                      return (
+                        <Row>
+                          <div key={img} className="pb-2">
+                            <img
+                              src={img}
+                              alt=""
+                              role="button"
+                              className="rounded img-fluid"
+                              onClick={() => {
+                                setimg(img);
+                                setModalShow(true);
+                              }}
+                            />
+                          </div>
+                        </Row>
+                      );
+                    })}
+                  </Col>
+                </Row>
+              </Col>
+
+              <Col xs={{ order: 1 }} lg={{ order: 2 }} className="pb-3">
+                <Stack className="text-center ">
+                  <div className="pb-3 ">
+                    <Stack
+                      className="justify-content-center"
+                      direction="horizontal"
+                      gap={2}
+                    >
+                      {proyect.hashtag.map((hashtag) => {
+                        return <Badge bg="primary">{hashtag}</Badge>;
+                      })}
+                    </Stack>
                   </div>
                   <div className="pb-3 experiencePosition">{proyect.title}</div>
                   <div className="pb-3 ">
                     <p>{proyect.content}</p>
                   </div>
+
                   <Stack
-                    className="proyectButtons"
+                    className="justify-content-center"
                     gap={2}
                     direction="horizontal"
                   >
-                    <div>
-                      <Button variant="primary">Ver Demo</Button>
+                    <div className="d-inline align-items-center">
+                      <Button
+                        variant="primary"
+                        href={proyect.demo}
+                        target="_blank"
+                      >
+                        Ver Demo
+                      </Button>
                     </div>
                     <div>
-                      <Button variant="outline-primary">Codigo</Button>
+                      <Button
+                        variant="outline-primary"
+                        href={proyect.code}
+                        target="_blank"
+                      >
+                        Codigo
+                      </Button>
                     </div>
                   </Stack>
                 </Stack>
-              </Stack>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  });
+              </Col>
+            </Row>
+          </Container>
+        );
+      })}
+
+      <ZoomImg show={modalShow} onHide={() => setModalShow(false)} />
+    </>
+  );
 };
 
 export default Proyects;
