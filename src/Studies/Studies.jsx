@@ -18,6 +18,7 @@ const Studies = () => {
                   className=" customStackImg"
                   direction="horizontal"
                   gap={2}
+                  key={element.name}
                 >
                   <div className="">
                     <img

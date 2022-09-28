@@ -17,6 +17,7 @@ const Certifications = () => {
             {data.map((element) => {
               return (
                 <Stack
+                  key={element.name}
                   className="pb-3 customStackImg"
                   direction="horizontal"
                   gap={2}
