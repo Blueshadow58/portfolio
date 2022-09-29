@@ -11,7 +11,9 @@ const ProfileDetail = () => {
           <div className="img-container">
             <img
               className="card-img "
-              src="https://picsum.photos/id/237/300/250"
+              src="https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-5ee60.appspot.com/o/Perfil%2FperfilImg.jpg?alt=media&token=37f9e672-e2c5-4801-9e7d-37c3ffa0f104"
+              height={250}
+              width={300}
               alt=""
             />
           </div>
