@@ -64,7 +64,7 @@ const Proyects = () => {
                   <Col>
                     {proyect.hImg.map((img) => {
                       return (
-                        <Row>
+                        <Row key={img}>
                           <div key={img} className="pb-2">
                             <img
                               src={img}
@@ -93,7 +93,11 @@ const Proyects = () => {
                       gap={2}
                     >
                       {proyect.hashtag.map((hashtag) => {
-                        return <Badge bg="primary">{hashtag}</Badge>;
+                        return (
+                          <Badge key={hashtag} bg="primary">
+                            {hashtag}
+                          </Badge>
+                        );
                       })}
                     </Stack>
                   </div>
