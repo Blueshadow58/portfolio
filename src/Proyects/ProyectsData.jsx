@@ -1,7 +1,7 @@
 export const proyectsData = [
   {
     hashtag: ["React", "Firebase", "Sockets", "Bootstrap"],
-    title: "Chat Grupal en tiempo real",
+    title: "Chat Grupal en tiempo real (work in progress)",
     content:
       "Se cuenta con la capacidad de crear nuevos canales y agregar a otros usuarios a dicho canal, el chat es en tiempo real y los usuarios no pueden invadir otros canales a los cuales no han sido previamente agregados",
     vImg: "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-5ee60.appspot.com/o/Chat-group%2Fmovil.png?alt=media&token=dde356de-6cfd-4186-bd31-d85330311b41",
@@ -14,7 +14,22 @@ export const proyectsData = [
     code: "https://github.com/Blueshadow58/chat-group.git",
   },
   {
-    hashtag: ["Bootstrap", "React", "Firebase", "API"],
+    hashtag: ["Bootstrap", "React", "Firebase", "HTML5"],
+    title: "Ecommerce basico (work in progress)",
+    content:
+      "Quiz simple acerca de automoviles con multiples respuestas, y con un resumen de la puntuación final obtenida, se consumio una API de quizes y trivias ",
+    vImg: "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-5ee60.appspot.com/o/movil.png?alt=media&token=50c025f9-62f3-423b-90d8-4ca01f527298",
+    hImg: [
+      "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-5ee60.appspot.com/o/index.png?alt=media&token=2cdf6e0e-a7cd-4846-a62f-d465c9753cb2",
+      "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-5ee60.appspot.com/o/Detalle%20de%20producto.png?alt=media&token=2971a315-18b4-4a89-9ba6-c319deace22f",
+      "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-5ee60.appspot.com/o/Carrito.png?alt=media&token=f80512b2-dcbe-4445-bcb3-c906ebcd58b6",
+      "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-5ee60.appspot.com/o/Checkout.png?alt=media&token=5ec6cb15-59f2-43eb-9d32-f585488a5f54",
+    ],
+    demo: "https://minimarket-gamonal.netlify.app/",
+    code: "https://github.com/Blueshadow58/minimarket-gamonal.git",
+  },
+  {
+    hashtag: ["Bootstrap", "React", "API", "HTML5"],
     title: "Quiz / Trivia",
     content:
       "Quiz simple acerca de automoviles con multiples respuestas, y con un resumen de la puntuación final obtenida, se consumio una API de quizes y trivias ",
