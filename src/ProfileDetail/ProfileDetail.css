@@ -3,6 +3,7 @@
   box-shadow: 0px 10px 15px -15px #000000,
     -50px -50px 10px -30px rgba(0, 0, 0, 0);
   border-radius: 15px !important;
+  padding-bottom: 10px;
 }
 
 /* .img-container {
@@ -12,6 +13,13 @@
   padding: 15px !important;
   border-radius: 30px !important;
   /* display: inline-block !important; */
+  /* width: fit-content; */
+}
+
+.img-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .profile-name {
@@ -22,7 +30,11 @@
   padding-top: 20px;
 }
 
-@media (max-width: 400px) {
+.customRow {
+  display: block;
+}
+
+@media (max-width: 770px) {
   .card-subtitle {
     display: table-caption;
   }

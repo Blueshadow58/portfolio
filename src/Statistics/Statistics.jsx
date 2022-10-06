@@ -23,12 +23,11 @@ const Statistics = () => {
                   gap={2}
                 >
                   <span className="">{element.name}</span>
-                  <div className="ms-auto">
-                    <ProgressBar
-                      className="progressBarSize"
-                      now={element.value}
-                    />
-                  </div>
+
+                  <ProgressBar
+                    className="progressBarSize ms-auto"
+                    now={element.value}
+                  />
                 </Stack>
               );
             })}

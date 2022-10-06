@@ -1,24 +1,24 @@
 import React from "react";
-import { Stack } from "react-bootstrap";
+import { Col, Row, Stack } from "react-bootstrap";
 import "./ProfileDetail.css";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const ProfileDetail = () => {
   return (
     <div className="card  customCard ">
-      <div className="row customRow">
-        <div className="col-auto ">
+      <Row className="customRow">
+        <Col className="col-auto mx-auto">
           <div className="img-container">
             <img
-              className="card-img "
+              className="card-img  mx-auto d-block"
               src="https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-5ee60.appspot.com/o/Perfil%2FperfilImg.jpg?alt=media&token=37f9e672-e2c5-4801-9e7d-37c3ffa0f104"
               height={250}
               width={300}
               alt=""
             />
           </div>
-        </div>
-        <div className="col">
+        </Col>
+        <Col>
           <div className="card-block px-3 card-detail">
             <Stack className="pb-2" direction="horizontal" gap={2}>
               <div>
@@ -59,8 +59,8 @@ const ProfileDetail = () => {
               desarrollo de software y demostrar mis capacidades en este ambito.
             </p>
           </div>
-        </div>
-      </div>
+        </Col>
+      </Row>
     </div>
   );
 };
