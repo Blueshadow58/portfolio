@@ -1,7 +1,7 @@
 export const proyectsData = [
   {
     hashtag: ["React", "Firebase", "Sockets", "Bootstrap"],
-    title: "Chat Grupal en tiempo real (work in progress)",
+    title: "Chat Grupal en tiempo real",
     content:
       "Se cuenta con la capacidad de crear nuevos canales y agregar a otros usuarios a dicho canal, el chat es en tiempo real y los usuarios no pueden invadir otros canales a los cuales no han sido previamente agregados",
     vImg: "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-5ee60.appspot.com/o/Chat-group%2Fmovil.png?alt=media&token=dde356de-6cfd-4186-bd31-d85330311b41",
@@ -10,7 +10,7 @@ export const proyectsData = [
       "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-5ee60.appspot.com/o/Chat-group%2FNew%20Channel.png?alt=media&token=add54a80-3a1f-493f-92e9-1f1fe4d0bd83",
       "https://firebasestorage.googleapis.com/v0/b/coderhouse-ecommerce-5ee60.appspot.com/o/Chat-group%2FaddMember.png?alt=media&token=f2056dfe-844b-4c42-a33a-c211ce236135",
     ],
-    demo: "https://github.com/Blueshadow58/chat-group.git",
+    demo: "https://chat-group-with-channels.netlify.app/",
     code: "https://github.com/Blueshadow58/chat-group.git",
   },
   {

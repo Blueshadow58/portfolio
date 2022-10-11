@@ -10,6 +10,7 @@ import {
 } from "react-bootstrap";
 import { proyectsData } from "./ProyectsData";
 import "./Proyects.css";
+import ProyectNav from "./ProyectNav";
 
 const Proyects = () => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -39,6 +40,9 @@ const Proyects = () => {
 
   return (
     <>
+      {/* Proyect navbar */}
+      <ProyectNav />
+
       {proyectsData.map((proyect) => {
         return (
           <Container
@@ -112,17 +116,19 @@ const Proyects = () => {
                     direction="horizontal"
                   >
                     <div className="d-inline align-items-center">
-                      <Button
-                        variant="primary"
-                        href={proyect.demo}
-                        target="_blank"
-                      >
-                        Ver Demo
-                      </Button>
+                      {proyect.demo && (
+                        <Button
+                          variant="primary"
+                          href={proyect.demo}
+                          target="_blank"
+                        >
+                          Ver Demo
+                        </Button>
+                      )}
                     </div>
                     <div>
                       <Button
-                        variant="outline-primary"
+                        variant="outline-light"
                         href={proyect.code}
                         target="_blank"
                       >
