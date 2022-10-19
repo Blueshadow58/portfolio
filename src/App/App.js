@@ -1,10 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
-import Certifications from "../Certifications/Certifications";
-import Experiences from "../Experiences/Experiences";
-import ProfileDetail from "../ProfileDetail/ProfileDetail";
-import Proyects from "../Proyects/Proyects";
-import Statistics from "../Statistics/Statistics";
-import Studies from "../Studies/Studies";
+import Certifications from "../Components/Certifications/Certifications";
+import Contact from "../Components/Contact/Contact";
+import Experiences from "../Components/Experiences/Experiences";
+import ProfileDetail from "../Components/ProfileDetail/ProfileDetail";
+import Proyects from "../Components/Proyects/Proyects";
+import Statistics from "../Components/Statistics/Statistics";
+import Studies from "../Components/Studies/Studies";
 import "./index.css";
 
 function App() {
@@ -12,7 +13,9 @@ function App() {
     <div className="App">
       <Container className="customContainer">
         {/* Profile Detail */}
+
         <ProfileDetail />
+
         {/* Statistics */}
         <Row className="">
           <Col md={4}>
@@ -34,6 +37,7 @@ function App() {
           </Col>
         </Row>
       </Container>
+      <Contact />
     </div>
   );
 }

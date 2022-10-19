@@ -4,18 +4,26 @@ import Stack from "react-bootstrap/Stack";
 
 import "../Statistics/Statistics.css";
 
-function ProyectNav() {
+function ProyectNav(props) {
   return (
     <Container className="card custom-card proyectSeparation ">
       <Stack direction="horizontal" gap={3} className="mx-auto">
         <div className="">
-          <Button variant="outline-light" className="btn-md">
-            Proyectos personales
+          <Button
+            onClick={() => props.proyectsType("FrontEnd")}
+            variant="outline-light"
+            className="btn-md"
+          >
+            Proyectos FrontEnd
           </Button>
         </div>
         <div className="">
-          <Button variant="outline-light" className="btn-md">
-            Micro Proyectos
+          <Button
+            onClick={() => props.proyectsType("BackEnd")}
+            variant="outline-light"
+            className="btn-md"
+          >
+            Proyectos BackEnd
           </Button>
         </div>
       </Stack>
