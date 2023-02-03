@@ -4,7 +4,7 @@ import { data } from "./StudiesData";
 
 const Studies = () => {
   return (
-    <div className="card custom-card ">
+    <div className="card custom-card mb-5">
       <div className="row ">
         <div className="col">
           <div className="card-block px-3 ">
@@ -26,6 +26,7 @@ const Studies = () => {
                       height={75}
                       src={element.img}
                       alt=""
+                      style={{ borderRadius: 15 }}
                     />
                   </div>
                   <Stack>

@@ -5,7 +5,7 @@ export const data = [
   },
   {
     name: "Node.js",
-    value: 70,
+    value: 65,
   },
   {
     name: "Javascript",
@@ -21,7 +21,7 @@ export const data = [
   },
   {
     name: "Bootstrap",
-    value: 80,
+    value: 85,
   },
   {
     name: "Laravel",
@@ -29,6 +29,6 @@ export const data = [
   },
   {
     name: "ReactNative",
-    value: 0,
+    value: 65,
   },
 ];

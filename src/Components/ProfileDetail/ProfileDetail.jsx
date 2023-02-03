@@ -52,11 +52,16 @@ const ProfileDetail = () => {
               de software como desarrollador Front/Back o FullStack.
             </p>
             <p className="card-text pt-1">
-              Actualmente me encuentro cursando "Desarrollo Backend con node.js"
-              en el curso de CoderHouse, y comienzo el del React Native en
-              octubre para continuar de forma paralela con los 2 cursos. Mi
-              actual objetivo es seguir aprendiendo tecnologias para el
-              desarrollo de software y demostrar mis capacidades en este ambito.
+              Soy un desarrollador Junior con experiencia en React.js y PHP, con
+              un gran interés en el desarrollo de aplicaciones móviles
+              utilizando React Native y Flutter.
+              <br /> Cuento con habilidades en React.js, JavaScript, HTML, CSS,
+              SQL, NoSQL y también tengo experiencia en el desarrollo de
+              aplicaciones de lado del servidor utilizando PHP y Node.js. Estoy
+              buscando una oportunidad para desempeñarme en el desarrollo de
+              aplicaciones móviles y mejorar mis habilidades en React Native y
+              Flutter. Me gusta trabajar en equipo y estoy constantemente
+              buscando nuevas formas de mejorar mis habilidades.
             </p>
           </div>
         </Col>

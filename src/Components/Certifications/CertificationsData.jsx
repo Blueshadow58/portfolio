@@ -1,15 +1,9 @@
 export const data = [
   {
-    date: "Comienza el 19 de octubre",
+    date: "sep 2022 - oct 2022",
     name: "Curso de React Native",
     img: "https://pbs.twimg.com/profile_images/1465705281279590405/1yiTdkKj_400x400.png",
-    link: "",
-  },
-  {
-    date: "Jul 2022 - En curso",
-    name: "Curso de Backend con Node js",
-    img: "https://pbs.twimg.com/profile_images/1465705281279590405/1yiTdkKj_400x400.png",
-    link: "",
+    link: "https://www.coderhouse.cl/certificados/63cdbcf4c4b08f000e32cb1d",
   },
   {
     date: "Jul 2022 - Ago 2022",
