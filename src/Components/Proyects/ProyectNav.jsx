@@ -10,6 +10,15 @@ function ProyectNav(props) {
       <Stack direction="horizontal" gap={3} className="mx-auto">
         <div className="">
           <Button
+            onClick={() => props.proyectsType("Mobile")}
+            variant="outline-light"
+            className="btn-md"
+          >
+            Proyectos Mobile
+          </Button>
+        </div>
+        <div className="">
+          <Button
             onClick={() => props.proyectsType("FrontEnd")}
             variant="outline-light"
             className="btn-md"

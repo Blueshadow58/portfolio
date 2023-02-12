@@ -1,7 +1,7 @@
 export const data = [
   {
     name: "React",
-    value: 65,
+    value: 80,
   },
   {
     name: "Node.js",
@@ -9,19 +9,19 @@ export const data = [
   },
   {
     name: "Javascript",
-    value: 75,
+    value: 90,
   },
   {
     name: "HTML",
-    value: 85,
+    value: 90,
   },
   {
     name: "CSS",
-    value: 85,
+    value: 90,
   },
   {
     name: "Bootstrap",
-    value: 85,
+    value: 90,
   },
   {
     name: "Laravel",
@@ -29,6 +29,10 @@ export const data = [
   },
   {
     name: "ReactNative",
-    value: 65,
+    value: 70,
+  },
+  {
+    name: "Flutter",
+    value: 40,
   },
 ];
